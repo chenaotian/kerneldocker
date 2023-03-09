@@ -1,0 +1,3 @@
+cpio -idmv < ../rootfs.img #解包cpio
+find . | cpio -o --format=newc > ../rootfs.img #打包cpio
+ps -ef |grep qemu | grep -v grep | awk '{print $2}' | xargs kill -9 #kill qemu
