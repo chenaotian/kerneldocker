@@ -4,7 +4,7 @@ WORKDIR /root
 
 LABEL maintainer="chenaotian <breezecat@qq.com>"
 
-COPY ./rootfs /root/tools/
+COPY ./rootfs.img /root/tools/
 COPY ./boot.sh /root/tools/
 COPY ./usefulcmd.txt /root/tools/
 
